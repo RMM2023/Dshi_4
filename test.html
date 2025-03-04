@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>"ДШИ №4" г. Казани</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="hed">
@@ -34,13 +41,29 @@
         </nav>
         
         <div class="image-scroll">
-            <button id="left-button" class="arrow left-arrow"></button>
+            
             <div class="gallery">
-                <img src="C:\web\Dshi_4\Foto\foto1.jpg">
+                <button id="left-button" class="arrow left-arrow"></button>
+                <img src="Foto\foto1.jpg">
+                <button id="right-button" class="arrow right-arrow"></button>
             </div>
-            <button id="right-button" class="arrow right-arrow"></button>
         </div>
         
-        
+        <div class="card-container">
+            <div class="card">
+                <img src="Icons\masks.png">
+                <p>Наши направления</p>
+            </div>
+
+            <div class="card">
+                <img src="Icons\calendar.png">
+                <p>Расписание</p>
+            </div>
+
+            <div class="card">
+                <img src="Icons\message.png">
+                <p>Написать нам</p>
+            </div>
+        </div>
     </body>
 </html>
