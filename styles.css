@@ -147,25 +147,38 @@
 .dropdown-menu-item::before{
     content: "▸ ";
 }
+
+.card-container2{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;
+    margin: 30px auto;
+}
 .card2{
-    
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     cursor: pointer;
-    padding: 20px;
+    padding: 8px;
     border-radius: 16px;
     background-color: #75A4F3;
     color: white;
     font-size: 14px;
     font-weight: 500;
+    width: auto;
+    height: auto;
+    box-sizing: border-box; /*дает понять auto ширине и высоте, в пределах каких значений выставлять*/
 }
-.card-container2{
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: 3fr;
-    padding-left: 400px;
-    padding-right: 400px;
-    justify-content: space-around;
-    margin-bottom: 30px;
+.card2 img{
+    width: 50px;
+    height: 50px;
+}
+.card-container2 > div:nth-child(9){
+    grid-column: 2 / 4; /*между начала 2 и началом 4 колонки*/
+    grid-row: 3;
+    padding-left: 160px;
+    padding-right: 160px;
 }
