@@ -15,6 +15,6 @@
 		</filter>
 	</defs>
 	<g filter="url(#filter_14_312_dd)">
-		<path id="Polygon 45" d="M38.5 18.45L7 0.27C5.66 -0.5 4 0.46 4 2L4 38.37C4 39.91 5.66 40.87 7 40.1L38.5 21.92C39.83 21.15 39.83 19.22 38.5 18.45Z" fill="#75A4F3" fill-opacity="0.500000" fill-rule="evenodd"/>
+		<path id="Polygon 45" d="M38.5 18.45L7 0.27C5.66 -0.5 4 0.46 4 2L4 38.37C4 39.91 5.66 40.87 7 40.1L38.5 21.92C39.83 21.15 39.83 19.22 38.5 18.45Z" fill="#75A4F3" fill-opacity="1.000000" fill-rule="evenodd"/>
 	</g>
 </svg>

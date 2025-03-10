@@ -4,8 +4,16 @@ document.addEventListener('DOMContentLoaded', function(){
     const galleryPhoto = document.getElementById('gallery-photo');
     
     const images = [
-        'Foto/foto1.jpg',
-        'Foto/foto2.jpg'
+        'Foto/1.jpg',
+        'Foto/2.jpg',
+        'Foto/3.jpg',
+        'Foto/4.jpg',
+        'Foto/5.jpg',
+        'Foto/6.jpg',
+        'Foto/7.jpg',
+        'Foto/8.jpg',
+        'Foto/9.jpg',
+        'Foto/10.jpg'
     ];
 
     let index = 0;
