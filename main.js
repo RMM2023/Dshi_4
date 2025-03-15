@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const leftButton = document.getElementById('left-button');
     const rightButton = document.getElementById('right-button');
     const galleryPhoto = document.getElementById('gallery-photo');
-    const 
     
     const images = [
         'Foto/1.jpg',
@@ -20,7 +19,13 @@ document.addEventListener('DOMContentLoaded', function(){
     let index = 0;
 
     function update(){
-        galleryPhoto.src = images[index];
+        galleryPhoto.classList.add('img-list-scroll');
+        setTimeout(()=>{
+            galleryPhoto.src = images[index]; //заменяем изображение спустя 400 милисек 
+        }, 400);
+        setTimeout(()=>{
+            galleryPhoto.classList.remove('img-list-scroll'); //завершаем(удаляем) анимацию на 800 мс
+        }, 800);
     }
 
     leftButton.addEventListener('click', function(){

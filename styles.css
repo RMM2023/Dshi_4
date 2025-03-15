@@ -78,13 +78,21 @@
     box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 }
 
+@keyframes img-list-scroll{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.img-list-scroll{
+    animation: img-list-scroll 0.8s ease-in-out;
+}
+
 .arrow {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent; /* Делаем фон прозрачным */
-
     background-size: contain;
     border: none;
     cursor: pointer;
