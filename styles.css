@@ -125,15 +125,27 @@
     font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-    
 }
 .card:hover{
-    animation: cursore-nav 1s;
+    animation: cursore-nav 1s forwards;
 }
 @keyframes cursore-nav{
-    0%{transform: translateY(32px);}
-    
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-16px);}
 }
+@keyframes cursore-nav-back{
+    0%{transform: translateY(-16px);}
+    100%{transform: translateY(0px);}
+}
+.card2:hover{
+    animation: cursore-nav 1s forwards;
+}
+.card:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+}
+.card2:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+} 
 .card img{
     width: 80px;
     height: 80px;
@@ -232,10 +244,18 @@
 .hr-line{
     width: 1050px;
     align-items: center;
+    height: 1px;
 	padding: 0px;
     border: none;
-	border-top: 1px solid #75A4F3;
-    
+    background: linear-gradient(90deg, #75a4f3, #fff, #5f9fdb, #75a4f3, #75a4f3);
+    background-size: 400% 400%;
+    animation: neo-line 3s linear infinite;
+    transform: translate3d(0, 0, 0);
+}
+@keyframes neo-line{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
 }
 .chapter-name{
     margin-top: 84px;
