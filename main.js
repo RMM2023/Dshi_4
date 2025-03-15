@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const leftButton = document.getElementById('left-button');
     const rightButton = document.getElementById('right-button');
     const galleryPhoto = document.getElementById('gallery-photo');
+    const 
     
     const images = [
         'Foto/1.jpg',
