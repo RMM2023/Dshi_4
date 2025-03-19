@@ -1,14 +1,59 @@
+/*index.html*/
+
 *{
     font-family: "Roboto", sans-serif;
 }
 .body{
     margin-top: 8px;
 }
+
+.hed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+
+.school-info{
+    text-align: center;
+}
+
+.school-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 110px;
+    color: #273641;
+}
+
+.contact-info{
+    text-align: right;
+    color: #273641;
+}
+
+.adress-contect{
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .nav{
     display: flex;
     justify-content: center;
     font-size: 20px;
 }
+
+.nav-item-main{
+    margin: 0px 20px;
+    position: relative;
+    color: #75A4F3;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .nav-item{
     margin: 0px 20px;
     position: relative;
@@ -17,38 +62,63 @@
     cursor: pointer;
     text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
+
 .nav-item::after{
     content: "▼";
     margin-left: 5px;
     font-size: 19px;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.15);
 }
-.hed{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 0px;
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #75A4F3;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+    z-index: 999;
 }
-.school-info{
-    text-align: center;
+
+.nav-item:hover .dropdown-menu{
+    display: block;
 }
-.school-name{
+
+.nav-item-main::after{
+    content: none;
+}
+
+.dropdown-menu-item{
+    color: white;
+    font-weight: 300;
     font-size: 16px;
-    font-weight: bold;
-    margin-left: 110px;
-    color: #273641;
+    cursor: pointer;
+    position: relative;
+    padding: 3px 0px;   
 }
-.contact-info{
-    text-align: right;
-    color: #273641;
+
+.dropdown-menu-item::before{
+    content: "▸ ";
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
-.adress-contect{
-    font-size: 14px;
-    font-weight: 600;
+
+.hr-line{
+    width: 1050px;
+    align-items: center;
+    height: 1px;
+	padding: 0px;
+    border: none;
+    background: linear-gradient(90deg, #75a4f3, #fff, #5f9fdb, #75a4f3, #75a4f3);
+    background-size: 400% 400%;
+    animation: neo-line 3s linear infinite;
+    transform: translate3d(0, 0, 0);
 }
-.logo img{
-    width: 90px;
-    height: 90px;
+
+@keyframes neo-line{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
 }
 
 .image-scroll {
@@ -56,7 +126,16 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    
+}
+
+.img-list-scroll{
+    animation: img-list-scroll 0.8s ease-in-out;
+}
+
+@keyframes img-list-scroll{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .gallery {
@@ -76,15 +155,6 @@
     align-items: center;
     overflow: visible;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
-}
-
-@keyframes img-list-scroll{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
-}
-.img-list-scroll{
-    animation: img-list-scroll 0.8s ease-in-out;
 }
 
 .arrow {
@@ -110,6 +180,7 @@
     width: 30px;
     height: 30px;
 }
+
 .card-container{
     display: flex;
     padding-left: 500px;
@@ -117,6 +188,7 @@
     justify-content: space-around;
     margin: 32px;
 }
+
 .card{
     display: flex;
     flex-direction: column;
@@ -132,9 +204,9 @@
     font-size: 14px;
     font-weight: 500;
     text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
-    
     animation: card-shadow 5s ease-out infinite alternate;
 }
+
 @keyframes card-shadow{
     0% {
 		border-color: #393;
@@ -145,6 +217,12 @@
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
+
 .card:hover{
     animation: cursore-nav 1s forwards;
 }
@@ -152,48 +230,17 @@
     0%{transform: translateY(0px);}
     100%{transform: translateY(-16px);}
 }
+
+.card:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+}
+
 @keyframes cursore-nav-back{
     0%{transform: translateY(-16px);}
     100%{transform: translateY(0px);}
 }
-.card2:hover{
-    animation: cursore-nav 1s forwards;
-}
-.card:not(:hover){
-    animation: cursore-nav-back 1s forwards;
-}
-.card2:not(:hover){
-    animation: cursore-nav-back 1s forwards;
-} 
-.card img{
-    width: 80px;
-    height: 80px;
-}
-.dropdown-menu{
-    display: none;
-    position: absolute;
-    background-color: #75A4F3;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
-    z-index: 999;
-}
-.nav-item:hover .dropdown-menu{
-    display: block;
-}
-.dropdown-menu-item{
-    color: white;
-    font-weight: 300;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    padding: 3px 0px;   
-}
-.dropdown-menu-item::before{
-    content: "▸ ";
-    text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
-}
+
+/*school-departments.html*/
 
 .directions{
     display: flex;
@@ -207,6 +254,7 @@
     align-content: center;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 }
+
 .card-container2{
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -215,6 +263,17 @@
     justify-content: center;
     margin: 30px auto;
 }
+
+.card-container2{
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 40px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;
+    margin: 100px auto;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
 .card2{
     display: flex;
     flex-direction: column;
@@ -231,62 +290,23 @@
     box-sizing: auto; /*дает понять auto ширине и высоте, в пределах каких значений выставлять*/
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
+
 .card2 img{
     width: 70px;
     height: 70px;
     margin-top: 16px;
 }
-.card-container2{
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 200px);
-    gap: 40px; /*отступы между ячейками по высоте и ширине*/
-    justify-content: center;
-    margin: 100px auto;
-    padding-left: 300px;
-    padding-right: 300px;
+
+.card2:hover{
+    animation: cursore-nav 1s forwards;
 }
-.nav-item-main{
-    margin: 0px 20px;
-    position: relative;
-    color: #75A4F3;
-    font-size: 18px;
-    cursor: pointer;
-}
-.nav-item-main::after{
-    content: none;
-}
-.department-name{
-    margin-top: -60px;
-    font-size: 64px;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-    text-align: center;
-    color: #273641;
-}
-.hr-line{
-    width: 1050px;
-    align-items: center;
-    height: 1px;
-	padding: 0px;
-    border: none;
-    background: linear-gradient(90deg, #75a4f3, #fff, #5f9fdb, #75a4f3, #75a4f3);
-    background-size: 400% 400%;
-    animation: neo-line 3s linear infinite;
-    transform: translate3d(0, 0, 0);
-}
-@keyframes neo-line{
-    0%{background-position: 0% 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0% 50%;}
-}
-.chapter-name{
-    margin-top: 84px;
-    font-size: 24px;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
-    text-align: center;
-    color: #273641;
-}
+
+.card2:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+} 
+
+/*department-piano.html*/
+
 .hr-line-chapter{
     width: 250px;
     height: 1px;
@@ -295,19 +315,30 @@
     border: none;
     animation: glow 1.5s infinite;
 }
+
 @keyframes glow{
     0%{box-shadow: 1px 1px 8px #75A4F3, 1px 1px 8px #75A4F3, 1px 1px 8px #75A4F3;}
     50%{box-shadow: 1px 1px 8px #a883b2, 1px 1px 8px #a883b2, 1px 1px 8px #a883b2;}
     100%{box-shadow: 1px 1px 8px #75A4F3, 1px 1px 8px #75A4F3, 1px 1px 8px #75A4F3;}
 }
+
+.department-name{
+    margin-top: -60px;
+    font-size: 64px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    text-align: center;
+    color: #273641;
+}
+
 .info-incoming{
     display: flex;
     flex-direction: column;
     font-size: 24px;
     padding: 0px 120px;
     text-align: center;
-    
 }
+
 .docs{
     display: flex;
     flex-direction: column;
@@ -320,14 +351,24 @@
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 8px;
     align-items: center;
     justify-content: center;
     padding-left: 300px;
     padding-right: 300px;
 }
+
+.chapter-name{
+    margin-top: 84px;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    text-align: center;
+    color: #273641;
+}
+
 .department-info{
     display: flex;
     flex-direction: column;
@@ -342,5 +383,5 @@
     font-size: 24px;
     text-align: center;
     line-height: normal;
-
 }
+
