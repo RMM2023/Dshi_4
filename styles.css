@@ -1,7 +1,7 @@
 /*index.html*/
 
 */*применение параметров ко всему проекту*/{
-    font-family: "Roboto", sans-serif; /*стиль шрифта майка*/
+    font-family: "Roboto", sans-serif; /*стиль шрифта*/
 }
 .body{
     margin-top: 8px;/*отступ сверху*/
@@ -11,7 +11,7 @@
     display: flex;/*схема расположения элементов по вертикали или горизонтали*/
     justify-content: space-between;/*расположение элементов на равном расстоянии друг от друга*/
     align-items: center;
-    padding: 8px 0px;/*элементы смещаются в зависимости от расстояния*/
+    padding: 8px 0px;/*отступ во внутрь объекта с образованием краев*/
 }
 
 .logo img{
@@ -25,7 +25,7 @@
 
 .school-name{
     font-size: 16px;/*размер шрифта*/
-    font-weight: bold;/*стиль текста - жирность, размер*/
+    font-weight: bold;/*стиль текста - жирность, ширина начертания одной буквы*/
     margin-left: 110px;/*отступ слева*/
     color: #273641;/*цвет текста*/
 }
@@ -48,7 +48,7 @@
 
 .nav-item-main{
     margin: 0px 20px;/*отступ ячейки элемента по горизонтали и вертикали*/
-    position: relative;/*позиционирование, но не понял как?*/
+    position: relative;/*позиционирование - относительно друг друга*/
     color: #75A4F3;
     font-size: 18px;
     cursor: pointer;/*изменение вида курсора при наведении на элемент. появление пальца вместо стрелки*/
@@ -64,29 +64,29 @@
 }
 
 .nav-item::after{
-    content: "▼";/*применение знака как элемента интерфейса*/
-    margin-left: 5px;/*отступ ячейки с элементом слева*/
+    content: "▼";/*дополнение строки*/
+    margin-left: 5px;/*отступ дополнение строки с элементом слева*/
     font-size: 19px;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.15);
 }
 
 .dropdown-menu{
-    display: none;/*скрытие дисплея?*/
-    position: absolute;/*абсолютная позиция. Что значит?*/
+    display: none;/*скрытие показа. изначально элемент не виден*/
+    position: absolute;/*абсолютная позиция. Элементы не зависимы друг от друга*/
     background-color: #75A4F3;/*заливка (фона, фигуры, ячейки)*/
     border-radius: 8px;/*скругление углов*/
     padding: 15px;/*отступ элемента внутри ячейки со всех сторон*/
     width: 250px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.5);/*тень фигуры, ячейки*/
-    z-index: 999;/*не помню*/
+    z-index: 999;/*чем больше значение, тем более на переднем плане находится объект. Наслоение друг от друга - числа порядок*/
 }
 
 .nav-item:hover .dropdown-menu{
-    display: block;/*показ элемента как блочного - это как?*/
+    display: block;/*видимость элемента - выставление стандартного дисплея*/
 }
 
 .nav-item-main::after{
-    content: none;/*новые элементы не вставляются? Зачем?*/
+    content: none;/*убираем контент после элемента*/
 }
 
 .dropdown-menu-item{
@@ -108,15 +108,15 @@
     align-items: center;
     height: 1px;
 	padding: 0px;
-    border: none;/*отмена границы элемента*/
+    border: none;/*отмена обводки элемента*/
     background: linear-gradient(90deg, #75a4f3, #fff, #5f9fdb, #75a4f3, #75a4f3);/*линейный градиент*/
-    background-size: 400% 400%;/*размер фонового изображения???*/
+    background-size: 400% 400%;/*размер фона*/
     animation: neo-line 3s linear infinite;/*применение анимации, задается имя анимации, ее длительность, повтор(действие)*/
-    transform: translate3d(0, 0, 0);/*то как будет работать анимация?*/
+    transform: translate3d(0, 0, 0);/*неперемещаем анимацию*/
 }
 
 @keyframes neo-line{/*инструмент для создания анимации*/
-    0%{background-position: 0% 50%;}/*что происходит при начальном и последующих состояниях. Не доконца понял*/
+    0%{background-position: 0% 50%;}/*что происходит при начальном и последующих состояниях. 50-не меняется позиция анимации*/
     50%{background-position: 100% 50%;}/*середина*/
     100%{background-position: 0% 50%;}/*финал*/
 }
@@ -160,10 +160,10 @@
 .arrow {
     width: 50px;
     height: 50px;
-    background-repeat: no-repeat;/*фоновый элемент не повторяется? Как это?*/
+    background-repeat: no-repeat;/*фоновый элемент не повторяется.*/
     background-position: center;
     background-color: transparent; /* Делаем фон прозрачным */
-    background-size: contain; /*адаптация размера ячейки в зависимости от ее содержимого?*/
+    background-size: contain; /*адаптация размера ячейки в зависимости от ее содержимого*/
     border: none;
     cursor: pointer;
     z-index: 10; /* Стрелки должны быть выше изображения */
@@ -171,7 +171,7 @@
 }
 
 .left-arrow {
-    background-image: url('Icons/left.svg');/*вставка элемента без необходимости указания его в html?*/
+    background-image: url('Icons/left.svg');/*вставка изображения на фон*/
     width: 30px;
     height: 30px;
 }
@@ -185,7 +185,7 @@
     display: flex;
     padding-left: 500px;
     padding-right: 500px;
-    justify-content: space-around;/*равное расстояние между элементами, боковые элементы шире центральных?*/
+    justify-content: space-around;/*равноудаленное расстояние между элементами*/
     margin: 32px;
 }
 
@@ -381,7 +381,7 @@
     color: white;
     font-size: 18px;
     font-weight: 300;
-    box-sizing: 300px 250px; /*дает понять auto ширине и высоте, в пределах каких значений выставлять - ЭТО КАК???*/
+    box-sizing: 300px 250px; /*дает понять контейнеру в пределах каких значений выставлять*/
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
@@ -415,3 +415,58 @@
     line-height: normal;
 }
 
+/*administration.html*/
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"]{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    padding-bottom: 16px;
+    align-items: end;
+}
+
+.form-container{
+    background-color: #75A4F3;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 250px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-container button{
+    border-radius: 4px;
+    background-color: white;
+    color: #273641;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-container button:hover{
+    background-color: #e0e0e0;
+}
