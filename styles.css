@@ -437,6 +437,8 @@ input[type="text"], input[type="password"]{
     font-size: 14px;
     padding-bottom: 16px;
     align-items: end;
+    width: 200px;
+    height: 9px;
 }
 
 .form-container{
@@ -445,7 +447,7 @@ input[type="text"], input[type="password"]{
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     width: 400px;
@@ -479,4 +481,113 @@ input[type="text"], input[type="password"]{
 
 .form-container button:hover{
     background-color: #e0e0e0;
+}
+
+/*admin-choice.html*/
+
+.card-choice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.card-choice{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 32px 32px 32px 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #75A4F3;
+    color: white;
+    font-size: 14px;
+    font-weight: medium;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    animation: card-shadow 5s ease-out infinite alternate;
+}
+
+.card-choice:hover{
+    animation: cursore-nav 1s forwards;
+}
+@keyframes cursore-nav{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-16px);}
+}
+
+.card-choice:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+}
+
+.card-choice img{
+    width: 90px;
+    height: 90px;
+    margin-top: 16px;
+}
+
+/*admin-editing.html*/
+.card-choice-editing{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.card-choice-edit{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 32px 32px 32px 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #75A4F3;
+    color: white;
+    font-size: 14px;
+    font-weight: medium;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    animation: card-shadow 5s ease-out infinite alternate;
+}
+.card-choice-edit img{
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+}
+
+.card-choice-edit:hover{
+    animation: cursore-nav 1s forwards;
+}
+
+.card-choice-edit:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+}
+
+/*video-gallery.html*/
+
+.icon-add img{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 30px;
+    padding-top: 150px;
+    width: 4%;
+}
+
+.icon-add img:hover{
+    animation: cursore-nav 1s forwards;
+}
+
+.icon-add img:not(:hover){
+    animation: cursore-nav-back 1s forwards;
 }
