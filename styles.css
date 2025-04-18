@@ -591,3 +591,38 @@ input[type="text"], input[type="password"]{
 .icon-add img:not(:hover){
     animation: cursore-nav-back 1s forwards;
 }
+
+/*poster.html*/
+
+
+.month-contaner{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.panel-month{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 20px;
+}
+
+.month{
+    display: flex;
+    flex-direction: row;
+    background-color: #75A4F3;
+    color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: medium;
+
+}
