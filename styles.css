@@ -495,7 +495,6 @@ input[type="text"], input[type="password"]{
 .card-choice{
     display: flex;
     flex-direction: column;
-    position: relative;
     margin: 32px 32px 32px 32px;
     justify-content: center;
     align-items: center;
@@ -543,7 +542,6 @@ input[type="text"], input[type="password"]{
 .card-choice-edit{
     display: flex;
     flex-direction: column;
-    position: relative;
     margin: 32px 32px 32px 32px;
     justify-content: center;
     align-items: center;
@@ -559,9 +557,10 @@ input[type="text"], input[type="password"]{
     text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
     animation: card-shadow 5s ease-out infinite alternate;
 }
+
 .card-choice-edit img{
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     margin-top: 16px;
 }
 
@@ -598,18 +597,11 @@ input[type="text"], input[type="password"]{
 .month-contaner{
     display: grid;
     grid-template-columns: repeat(6, 200px);
-    grid-template-rows: repeat(2, 150px);
-    gap: 20px; /*отступы между ячейками по высоте и ширине*/
+    grid-template-rows: repeat(2, 30px);
+    gap: 16px; /*отступы между ячейками по высоте и ширине*/
     justify-content: center;
-    margin: 30px auto;
+    margin: 10px;
     align-items: center;
-}
-
-.panel-month{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    padding: 20px;
 }
 
 .month{
@@ -624,5 +616,5 @@ input[type="text"], input[type="password"]{
     text-align: center;
     font-size: 24px;
     font-weight: medium;
-
+    padding: 5px;
 }
