@@ -38,7 +38,7 @@ function VideoGalleryEdit(){
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-video"/>
+                <div class="card-choice-edit-video">
                     <img src="Foto\2.jpg"/>
                     <div class="edit-video">
                         <a>Наименование фото</a>
