@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 import ImageScroll from '../components/ImageScroll';
+import iconProgramm from '../assets/icons/programm_icon.png';
+import iconAnnotation from '../assets/icons/annotation_icon.png';
 
 function DepartmentTheatrical(){
     return(
@@ -34,11 +36,11 @@ function DepartmentTheatrical(){
             <div class="docs">
                 <div class="card-container-docs">
                     <div id="art_of_theater_annotation" class="card-doc" onclick="window.location.href='programs/piano/art_of_theater_annotation.pdf'">
-                        <img src="Icons\annotation_icon.png"/>
+                        <img src={iconAnnotation}/>
                         <a>Аннотация "Искусство театра"</a>
                     </div>
                     <div id="art_of_theater_DPP" class="card-doc" onclick="window.location.href='programs/piano/art_of_theater_DPP.pdf'">
-                        <img src="Icons\programm_icon.png"/>
+                        <img src={iconProgramm}/>
                         <a>ДПП "Искусство театра"</a>
                     </div>
                 </div>
@@ -59,26 +61,26 @@ function DepartmentTheatrical(){
                 Программы ориентированы на формирование у учеников эстетических взглядов и потребности общаться с культурными ценностями, воспитание детей в творческой атмосфере, обстановке доброжелательности и профессиональной требовательности.
                 Во время учебы юные пианисты осваивают игру на фортепиано соло и в ансамбле, учатся аккомпанировать певцу.
                 Каждый обучающийся отделения получает возможность публичных выступлений на школьных, городских концертах, защищают честь школы искусств «Глазовчанка» на фестивалях и конкурсах городского, областного, межрегионального, Всероссийского и Международного уровней, демонстрируя неизменно высокое качество исполнения и завоевывая новые награды.
-                    <div class="head-techers-list">
-                        <br/><h3>Заведующий отделением:</h3>
-                        <br/>Насыбуллина Эльмира Робертовна
-                        <br/><h3>Преподаватели отделения:</h3>
-                        <br/>Брылякова Ирина Геннадьевна,
-                        <br/>Загребина Лариса Михайловна,
-                        <br/>Кожина Ольга Сергеевна,
-                        <br/>Кондюрина Евгения Борисовна,
-                        <br/>Кощеева Ксения Викторовна,
-                        <br/>Кычкина Ольга Валентиновна,
-                        <br/>Лекомцева Вера Геннадьевна,
-                        <br/>Ленчукова Татьяна Александровна,
-                        <br/>Пагина Татьяна Евгеньевна,
-                        <br/>Трофимова Екатерина Борисовна,
-                        <br/>Урасинова Анастасия Юрьевна,
-                        <br/>Уткина Любовь Анатольевна.
-                    </div>
+                <div class="head-techers-list">
+                    <br/><h3>Заведующий отделением:</h3>
+                    <br/>Насыбуллина Эльмира Робертовна
+                    <br/><h3>Преподаватели отделения:</h3>
+                    <br/>Брылякова Ирина Геннадьевна,
+                    <br/>Загребина Лариса Михайловна,
+                    <br/>Кожина Ольга Сергеевна,
+                    <br/>Кондюрина Евгения Борисовна,
+                    <br/>Кощеева Ксения Викторовна,
+                    <br/>Кычкина Ольга Валентиновна,
+                    <br/>Лекомцева Вера Геннадьевна,
+                    <br/>Ленчукова Татьяна Александровна,
+                    <br/>Пагина Татьяна Евгеньевна,
+                    <br/>Трофимова Екатерина Борисовна,
+                    <br/>Урасинова Анастасия Юрьевна,
+                    <br/>Уткина Любовь Анатольевна.
+                </div>
                 </a>
             </div>
         </div>
     );
 }
-export default DepartmentTheatrical
+export default DepartmentTheatrical;

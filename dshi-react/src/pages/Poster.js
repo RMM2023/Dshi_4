@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 
 function Poster(){
     <div>
@@ -24,3 +24,4 @@ function Poster(){
         </div>
     </div>
 }
+export default Poster;

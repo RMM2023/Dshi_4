@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 
 function VideoGalleryEdit(){
     return(
@@ -66,4 +66,4 @@ function VideoGalleryEdit(){
         </div>
     );
 }
-export default VideoGalleryEdit
+export default VideoGalleryEdit;

@@ -1,9 +1,11 @@
 import react from 'react';
+import logo from '../assets/icons/cooperation.png';
+
 function Header(){
     return (
         <header class="hed">
             <div class="logo">
-                <img src="Fone\cooperation.png"/>
+                <img src={logo}/>
             </div>
             
             <div class="school-info">

@@ -1,6 +1,8 @@
 import React from 'react';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 import Header from '../components/Header';
+import iconvideogallerry from '../assets/icons/Create.png';
+import iconStatistics from '../assets/icons/statistics.png';
 
 function AdminEditing(){
     return(
@@ -12,37 +14,37 @@ function AdminEditing(){
             <div class="card-choice-editing">
                 <div class="card-choice-edit">
                     <div onclick="window.location.href = 'video-gallery-edit.html'">
-                        <img src="Icons\Create.png"/>
+                        <img src={iconvideogallerry}/>
                         <a>Видеогалерея</a>
                     </div>
                 </div>
                 <div class="card-choice-edit">
                     <div>
-                        <img src="Icons\statistics.png"/>
+                        <img src={iconStatistics}/>
                         <a>Документы</a>
                     </div>
                 </div>
                 <div class="card-choice-edit">
                     <div>
-                        <img src="Icons\statistics.png"/>
+                        <img src={iconStatistics}/>
                         <a>Библиотека</a>
                     </div>
                 </div>
                 <div class="card-choice-edit">
                     <div onclick="window.location.href = 'photo-gallery-edit.html'">
-                        <img src="Icons\statistics.png"/>
+                        <img src={iconStatistics}/>
                         <a>Фотогалерея</a>
                     </div>
                 </div>
                 <div class="card-choice-edit">
                     <div>
-                        <img src="Icons\statistics.png"/>
+                        <img src={iconStatistics}/>
                         <a>Учащиеся</a>
                     </div>
                 </div>
                 <div class="card-choice-edit">
                     <div>
-                        <img src="Icons\statistics.png"/>
+                        <img src={iconStatistics}/>
                         <a>Расписание</a>
                     </div>
                 </div>
@@ -50,3 +52,4 @@ function AdminEditing(){
         </div>
     );
 }
+export default AdminEditing;

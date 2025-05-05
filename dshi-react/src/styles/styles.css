@@ -16,7 +16,7 @@
 
 .logo img{
     width: 90px;/*ширина*/
-    height: 90px;//*высота*/
+    height: 90px;/*высота*/
 }
 
 .school-info{
@@ -171,12 +171,12 @@
 }
 
 .left-arrow {
-    background-image: url('Icons/left.svg');/*вставка изображения на фон*/
+    background-image: url('../assets/icons/left.svg');/*вставка изображения на фон*/
     width: 30px;
     height: 30px;
 }
 .right-arrow {
-    background-image: url('Icons/right.svg');
+    background-image: url('../assets/icons/right.svg');
     width: 30px;
     height: 30px;
 }

@@ -1,29 +1,30 @@
 import react from 'react';
 import Header from '../components/Header';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 import ImageScroll from '../components/ImageScroll';
+import iconMasks from '../assets/icons/masks.png';
+import iconCalendar from '../assets/icons/calendar.png';
+import iconMessage from '../assets/icons/message.png'
 
 function MainPage(){
     return(
         <div>
             <Header/>
             <Nav/>
-            <ImageScroll/>
-            <hr class="hr-line"/>
-            
+            <ImageScroll/>          
             <div class="card-container">
                 <div id="card-direction" class="card" onclick="window.location.href = 'school-departments.html'">
-                    <img src="Icons\masks.png"/>
+                    <img src={iconMasks}/>
                     <p>Наши направления</p>
                 </div>
 
                 <div id="calendar" class="card" onclick="window.location.href = 'https/'">
-                    <img src="Icons\calendar.png"/>
+                    <img src={iconCalendar}/>
                     <p>Расписание</p>
                 </div>
 
                 <div class="card">
-                    <img src="Icons\message.png"/>
+                    <img src={iconMessage}/>
                     <p>Написать нам</p>
                 </div>
             </div>
