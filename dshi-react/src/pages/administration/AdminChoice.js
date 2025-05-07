@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
-import iconEdit from '../assets/icons/Create.png';
-import iconStatistics from '../assets/icons/statistics.png';
+import iconEdit from '../../assets/icons/Create.png';
+import iconStatistics from '../../assets/icons/statistics.png';
 
 function AdminChoice(){
     <div>

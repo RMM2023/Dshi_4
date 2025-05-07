@@ -13,12 +13,12 @@ import DepartmentWind from './pages/DepartmentWind';
 import DepartmentChoreography from './pages/DepartmentChoreography';
 import DepartmentChoralSinging from './pages/DepartmentChoralSinging';
 
-import PhotoGalleryEdit from './gallery/PhotoGalleryEdit';
-import VideoGalleryEdit from './gallery/VideoGalleryEdit';
-import AdminChoice from './administration/AdminChoice';
-import AdminEditing from './administration/AdminEditing';
-import Administration from './administration/Administration';
-import Poster from './poster/Poster';
+import PhotoGalleryEdit from './pages/gallery/PhotoGalleryEdit';
+import VideoGalleryEdit from './pages/gallery/VideoGalleryEdit';
+import AdminChoice from './pages/administration/AdminChoice';
+import AdminEditing from './pages/administration/AdminEditing';
+import Administration from './pages/administration/Administration';
+import Poster from './pages/administration/Poster';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
           <Route path='/administration/adminChoice' element={<AdminChoice/>}/>
           <Route path='/administration/adminEditing' element={<AdminEditing/>}/>
           <Route path='/administration/administration' element={<Administration/>}/>
-          <Route path='/poster/poster' element={<Poster/>}/>
+          <Route path='/administration/poster' element={<Poster/>}/>
         </Routes>
       </div>
     </Router>
