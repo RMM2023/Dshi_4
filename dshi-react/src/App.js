@@ -9,15 +9,16 @@ import DepartmentStringBowed from './pages/DepartmentStringBowed';
 import DepartmentStringPlucked from './pages/DepartmentStringPlucked';
 import DepartmentTheatrical from './pages/DepartmentTheatrical';
 import DepartmentVocal from './pages/DepartmentVocal';
-import DepartmenHoreography from './pages/DepartmenHoreography';
-import DepartmenChoralSinging from './pages/DepartmenChoralSinging';
+import DepartmentWind from './pages/DepartmentWind';
+import DepartmentChoreography from './pages/DepartmentChoreography';
+import DepartmentChoralSinging from './pages/DepartmentChoralSinging';
 
-import PhotoGalleryEdit from './Photo/PhotoGalleryEdit';
-import VideoGalleryEdit from './Photo/VideoGalleryEdit';
-import AdminChoice from './Photo/AdminChoice';
-import AdminEditing from './Photo/AdminEditing';
-import Administration from './Photo/Administration';
-import Poster from './Photo/Poster';
+import PhotoGalleryEdit from './gallery/PhotoGalleryEdit';
+import VideoGalleryEdit from './gallery/VideoGalleryEdit';
+import AdminChoice from './administration/AdminChoice';
+import AdminEditing from './administration/AdminEditing';
+import Administration from './administration/Administration';
+import Poster from './poster/Poster';
 
 function App() {
   return (
@@ -27,21 +28,21 @@ function App() {
           <Route path='/' element={<MainPage/>}/>
           <Route path='/departments/piano' element={<DepartmentPiano/>}/>
           <Route path='/departments/folk' element={<DepartmentFolk/>}/>
-          <Route path='/depsrtments/school' element={<DepartmentSchool/>}/>
+          <Route path='/departments/school' element={<DepartmentSchool/>}/>
           <Route path='/departments/stringBowed' element={<DepartmentStringBowed/>}/>
           <Route path='/departments/stringPlucked' element={<DepartmentStringPlucked/>}/>
           <Route path='/departments/theatrical' element={<DepartmentTheatrical/>}/>
           <Route path='/departments/vocal' element={<DepartmentVocal/>}/>
-          <Route path='/departments/wind' element={<DepartmenWind/>}/>
-          <Route path='/departments/choreography' element={<DepartmenHoreography/>}/>
-          <Route path='/departments/choralSinging' element={<DepartmenChoralSinging/>}/>
+          <Route path='/departments/wind' element={<DepartmentWind/>}/>
+          <Route path='/departments/choreography' element={<DepartmentChoreography/>}/>
+          <Route path='/departments/choralSinging' element={<DepartmentChoralSinging/>}/>
           
           <Route path='/gallery/photoGalleryEdit' element={<PhotoGalleryEdit/>}/>
-          <Route path='/Administration/videoGalleryEdit' element={<VideoGalleryEdit/>}/>
-          <Route path='/Administration/adminChoise' element={<AdminChoice/>}/>
-          <Route path='/Administration/adminEditing' element={<AdminEditing/>}/>
-          <Route path='/Administration/administration' element={<Administration/>}/>
-          <Route path='/Poster/poster' element={<Poster/>}/>
+          <Route path='/gallery/videoGalleryEdit' element={<VideoGalleryEdit/>}/>
+          <Route path='/administration/adminChoice' element={<AdminChoice/>}/>
+          <Route path='/administration/adminEditing' element={<AdminEditing/>}/>
+          <Route path='/administration/administration' element={<Administration/>}/>
+          <Route path='/poster/poster' element={<Poster/>}/>
         </Routes>
       </div>
     </Router>

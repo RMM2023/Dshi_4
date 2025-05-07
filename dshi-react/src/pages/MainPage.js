@@ -5,7 +5,6 @@ import ImageScroll from '../components/ImageScroll';
 import iconMasks from '../assets/icons/masks.png';
 import iconCalendar from '../assets/icons/calendar.png';
 import iconMessage from '../assets/icons/message.png'
-import DepartmentSchool from './DepartmentSchool';
 import { useNavigate } from 'react-router-dom';
 
 function MainPage(){
