@@ -19,7 +19,7 @@ function DepartmentSchool(){
             <h3 class="directions">Отделения школы</h3>
         
         <div class="card-container2">
-            <div id="departament-piano" class="card2" onclick="window.location.href = 'department-piano.html'">
+            <div id="departament-piano" class="card2" onclick="window.location.href = 'DepartmentPiano.js'">
                 <img src={iconRoal}/>
                 <p>Отдел фортепиано</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
