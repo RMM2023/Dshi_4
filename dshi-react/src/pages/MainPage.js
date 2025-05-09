@@ -14,18 +14,18 @@ function MainPage(){
             <Header/>
             <Nav/>
             <ImageScroll/>          
-            <div class="card-container">
-                <div id="card-direction" class="card" onclick={() => navigate('DepartmentSchool')}>
+            <div className="card-container">
+                <div id="card-direction" className="card" onClick={() => navigate('/departments/school')}>
                     <img src={iconMasks}/>
                     <p>Наши направления</p>
                 </div>
 
-                <div id="calendar" class="card" onclick={() => navigate('DepartmentSchool')}>
+                <div id="calendar" className="card" onClick={() => navigate('/departments/school')}>
                     <img src={iconCalendar}/>
                     <p>Расписание</p>
                 </div>
 
-                <div class="card" onclick={() => navigate('DepartmentSchool')}>
+                <div className="card" onClick={() => navigate('/departments/school')}>
                     <img src={iconMessage}/>
                     <p>Написать нам</p>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from '../../../components/Nav';
-import Header from '../../../components/Header';
+import Nav from '../../components/Nav';
+import Header from '../../components/Header';
 import iconvideogallerry from '../../assets/icons/Create.png';
 import iconStatistics from '../../assets/icons/statistics.png';
 

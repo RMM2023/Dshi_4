@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', function(){
         'Foto/10.jpg'
     ];
 
-    let index = 0;
+    let index = 0;//изначальной фотографии № 0, начальное состояние
 
     function update(){
-        galleryPhoto.classList.add('img-list-scroll');
+        galleryPhoto.classList.add('img-list-scroll');//класс - название стиля. 
         setTimeout(()=>{
-            galleryPhoto.src = images[index]; //заменяем изображение спустя 400 милисек 
+            galleryPhoto.src = images[index]; //заменяем изображение спустя 400 милисек само переключение 
         }, 400);
         setTimeout(()=>{
-            galleryPhoto.classList.remove('img-list-scroll'); //завершаем(удаляем) анимацию на 800 мс
+            galleryPhoto.classList.remove('img-list-scroll'); //завершаем(удаляем) анимацию на 800 мс. ушло фото
         }, 800);
     }
 
@@ -43,5 +43,5 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         update();
     })
-    update();
+    update();// обновление состояния галереи на момент первого открытия страницы
 });
