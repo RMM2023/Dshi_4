@@ -10,58 +10,60 @@ import iconVocal from '../assets/icons/microphone.png';
 import iconChoral from '../assets/icons/choir.png';
 import iconChoreography from '../assets/icons/salsa.png';
 import iconTheatrical from '../assets/icons/theatre.png';
+import { useNavigate } from 'react-router-dom';
 
 function DepartmentSchool(){
+    const navigate = useNavigate();
     return(
         <div>
             <Header/>
             <Nav/>
-            <h3 class="directions">Отделения школы</h3>
+            <h3 className="directions">Отделения школы</h3>
         
-        <div class="card-container2">
-            <div id="departament-piano" class="card2" onclick="window.location.href = 'DepartmentPiano.js'">
+        <div className="card-container2">
+            <div id="departament-piano" className="card2" onClick="window.location.href = 'DepartmentPiano.js'">
                 <img src={iconRoal}/>
                 <p>Отдел фортепиано</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
 
-            <div id="department-string-bowed" class="card2" onclick="window.location.href = 'department-piano.html'">
+            <div id="department-string-bowed" className="card2" onClick="window.location.href = 'department-piano.html'">
                 <img src={iconViolin}/>
                 <p>Отдел струнно смычковых инструментов</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
 
-            <div id="departament-string-pluced" class="card2" onclick="window.location.href = 'department-string-plucked.html'">
+            <div id="departament-string-pluced" className="card2" onClick="window.location.href = 'department-string-plucked.html'">
                 <img src={iconGuitar}/>
                 <p>Отдел струнно-щипковых инструментов</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-folk" class="card2" onclick="window.location.href = 'department-folk.html'">
+            <div id="department-folk" className="card2" onClick="window.location.href = 'department-folk.html'">
                 <img src={iconAccordion}/>
                 <p>Отдел народных инструментов</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-wind" class="card2" onclick="window.location.href = 'department-wind.html'">
+            <div id="department-wind" className="card2" onClick="window.location.href = 'department-wind.html'">
                 <img src={iconWind}/>
                 <p>Отдел духовых инструментов</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-vocal" class="card2" onclick="window.location.href = 'department-vocal.html'">
+            <div id="department-vocal" className="card2" onClick="window.location.href = 'department-vocal.html'">
                 <img src={iconVocal}/>
                 <p>Отдел вокала</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-choral-singing" class="card2" onclick="window.location.href = 'department-choral-singing.html'">
+            <div id="department-choral-singing" className="card2" onClick="window.location.href = 'department-choral-singing.html'">
                 <img src={iconChoral}/>
                 <p>Отдел хорового пения</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-choreography" class="card2" onclick="window.location.href = 'department-choreography.html'">
+            <div id="department-choreography" className="card2" onClick="window.location.href = 'department-choreography.html'">
                 <img src={iconChoreography}/>
                 <p>Отдел<br/>хореографического искусства</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>
             </div>
-            <div id="department-theatrical" class="card2" onclick="window.location.href = 'department-theatrical.html'">
+            <div id="department-theatrical" className="card2" onClick="window.location.href = 'department-theatrical.html'">
                 <img src={iconTheatrical}/>
                 <p>Отдел театрального искусства</p>
                 <p>Зав. отдела Насыбуллина Э.Р.</p>

@@ -6,21 +6,21 @@ function Poster(){
     <div>
         <Header/>
         <Nav/>
-        <h3 class="directions">Афиша</h3>
+        <h3 className="directions">Афиша</h3>
         
-        <div class="month-contaner">
-                <div class="month">Сентрябрь</div>
-                <div class="month">Октябрь</div>
-                <div class="month">Ноябрь</div>
-                <div class="month">Декабрь</div>
-                <div class="month">Январь</div>
-                <div class="month">Февраль</div>
-                <div class="month">Март</div>
-                <div class="month">Апрель</div>
-                <div class="month">Май</div>
-                <div class="month">Июнь</div>
-                <div class="month">Июль</div>
-                <div class="month">Август</div>
+        <div className="month-contaner">
+                <div className="month">Сентрябрь</div>
+                <div className="month">Октябрь</div>
+                <div className="month">Ноябрь</div>
+                <div className="month">Декабрь</div>
+                <div className="month">Январь</div>
+                <div className="month">Февраль</div>
+                <div className="month">Март</div>
+                <div className="month">Апрель</div>
+                <div className="month">Май</div>
+                <div className="month">Июнь</div>
+                <div className="month">Июль</div>
+                <div className="month">Август</div>
         </div>
     </div>
 }

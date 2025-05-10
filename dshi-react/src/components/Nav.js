@@ -1,65 +1,67 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Nav(){
+    const navigate = useNavigate();
     return (
-        <nav class="nav">
-            <div class="nav-item">
+        <nav className="nav">
+            <div className="nav-item">
                 О школе
-                <div class="dropdown-menu">
-                    <div class="dropdown-menu-item">История школы</div>
-                    <div class="dropdown-menu-item">Новости</div>
-                    <div class="dropdown-menu-item">Видеогалерея</div>
-                    <div class="dropdown-menu-item">Наши степендиаты</div>
-                    <div class="dropdown-menu-item">Лауреаты</div>
-                    <div class="dropdown-menu-item">Известные выпускники</div>
-                    <div class="dropdown-menu-item">Библиотека</div>
-                    <div class="dropdown-menu-item">Одаренные дети</div>
-                    <div class="dropdown-menu-item">Наши конкурсы</div>
-                    <div class="dropdown-menu-item">Школа в СМИ</div>
+                <div className="dropdown-menu">
+                    <div className="dropdown-menu-item">История школы</div>
+                    <div className="dropdown-menu-item">Новости</div>
+                    <div className="dropdown-menu-item">Видеогалерея</div>
+                    <div className="dropdown-menu-item">Наши степендиаты</div>
+                    <div className="dropdown-menu-item">Лауреаты</div>
+                    <div className="dropdown-menu-item">Известные выпускники</div>
+                    <div className="dropdown-menu-item">Библиотека</div>
+                    <div className="dropdown-menu-item">Одаренные дети</div>
+                    <div className="dropdown-menu-item">Наши конкурсы</div>
+                    <div className="dropdown-menu-item">Школа в СМИ</div>
                 </div>
             </div>
             
-            <div id="index" class="nav-item-main" onclick="window.location.href = 'index.html'">Наша Афиша</div>
+            <div id="index" className="nav-item-main" onClick="window.location.href = 'index.html'">Наша Афиша</div>
             
-            <div class="nav-item">
+            <div className="nav-item">
                 Сведения об организации
-                <div class="dropdown-menu">
-                    <div class="dropdown-menu-item">Основные сведения</div>
-                    <div class="dropdown-menu-item">Образовательный процесс</div>
-                    <div class="dropdown-menu-item">Документы</div>
-                    <div class="dropdown-menu-item">Структура и органы управления образовательной организации</div>
-                    <div class="dropdown-menu-item">Руководство</div>
-                    <div class="dropdown-menu-item">Преподавательский состав</div>
-                    <div class="dropdown-menu-item">Доступная среда</div>
-                    <div class="dropdown-menu-item">Рейтинг школы</div>
-                    <div class="dropdown-menu-item">Методическая деятельность</div>
-                    <div class="dropdown-menu-item">Организационно-массовая деятельность</div>
-                    <div class="dropdown-menu-item">Отчет</div>
-                    <div class="dropdown-menu-item">Вакансии</div>
+                <div className="dropdown-menu">
+                    <div className="dropdown-menu-item">Основные сведения</div>
+                    <div className="dropdown-menu-item">Образовательный процесс</div>
+                    <div className="dropdown-menu-item">Документы</div>
+                    <div className="dropdown-menu-item">Структура и органы управления образовательной организации</div>
+                    <div className="dropdown-menu-item">Руководство</div>
+                    <div className="dropdown-menu-item">Преподавательский состав</div>
+                    <div className="dropdown-menu-item">Доступная среда</div>
+                    <div className="dropdown-menu-item">Рейтинг школы</div>
+                    <div className="dropdown-menu-item">Методическая деятельность</div>
+                    <div className="dropdown-menu-item">Организационно-массовая деятельность</div>
+                    <div className="dropdown-menu-item">Отчет</div>
+                    <div className="dropdown-menu-item">Вакансии</div>
                 </div>
             </div>
             
-            <div class="nav-item">
+            <div className="nav-item">
                 Образование
-                <div class="dropdown-menu">
-                    <div class="dropdown-menu-item">Направления школы</div>
-                    <div class="dropdown-menu-item">День открытых дверей</div>
-                    <div class="dropdown-menu-item">Прием в школу</div>
-                    <div class="dropdown-menu-item">Платные образовательные услуги</div>
-                    <div class="dropdown-menu-item">Учащимся</div>
-                    <div class="dropdown-menu-item">Дистанционное обучение</div>
+                <div className="dropdown-menu">
+                    <div className="dropdown-menu-item">Направления школы</div>
+                    <div className="dropdown-menu-item">День открытых дверей</div>
+                    <div className="dropdown-menu-item">Прием в школу</div>
+                    <div className="dropdown-menu-item">Платные образовательные услуги</div>
+                    <div className="dropdown-menu-item">Учащимся</div>
+                    <div className="dropdown-menu-item">Дистанционное обучение</div>
                 </div>
             </div>
             
-            <div class="nav-item">
+            <div className="nav-item">
                 Ещё
-                <div class="dropdown-menu">
-                    <div class="dropdown-menu-item">Наши контакты</div>
-                    <div class="dropdown-menu-item">Наши отзывы</div>
+                <div className="dropdown-menu">
+                    <div className="dropdown-menu-item">Наши контакты</div>
+                    <div className="dropdown-menu-item">Наши отзывы</div>
                 </div>
             </div>
             
-            <hr class="hr-line"></hr>
+            <hr className="hr-line"></hr>
         </nav>
     );
 }

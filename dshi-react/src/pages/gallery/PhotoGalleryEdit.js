@@ -8,56 +8,56 @@ function PhotoGalleryEdit(){
         <div>
             <Header/>
             <Nav/>
-            <div class="icon-add">
+            <div className="icon-add">
                 <img src="Icons\add.svg"/>
             </div>
         
-            <h3 class="directions">Фотогаллерея</h3>
+            <h3 className="directions">Фотогаллерея</h3>
         
-            <div id="card-choice-editing-photo" class="card-choice-editing-photo">
-                <div class="card-choice-edit-photo">
+            <div id="card-choice-editing-photo" className="card-choice-editing-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>
                     </div>
                 </div>
-                <div class="card-choice-edit-photo">
+                <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
-                    <div class="edit-photo">
+                    <div className="edit-photo">
                         <a>Наименование фото</a>
                         <img src="Icons\delete.svg"/>
                         <img src="Icons\edit_ezaiekru1cre.svg"/>

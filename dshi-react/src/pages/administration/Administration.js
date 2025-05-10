@@ -6,17 +6,17 @@ function Administration(){
     <div>
         <Header/>
         <Nav/>
-        <h3 class="directions">Администрация</h3>
+        <h3 className="directions">Администрация</h3>
         
-        <div class="form-container">
-            <form class="admin-name" action="#" method="post">
-                <div class="form-group">
+        <div className="form-container">
+            <form className="admin-name" action="#" method="post">
+                <div className="form-group">
                     <label for="admin">Администратор</label>
-                    <input type="text" id="admin" name="admin" class="input-name"> </input>
+                    <input type="text" id="admin" name="admin" className="input-name"> </input>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="password">Id пароль</label>
-                    <input type="password" id="password" name="password" class="input-name"> </input>
+                    <input type="password" id="password" name="password" className="input-name"> </input>
                 </div>
                 <button type="submit">Войти</button>
             </form>

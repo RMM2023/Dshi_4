@@ -4,55 +4,57 @@ import Nav from '../components/Nav';
 import ImageScroll from '../components/ImageScroll';
 import iconProgramm from '../assets/icons/programm_icon.png';
 import iconAnnotation from '../assets/icons/annotation_icon.png';
+import { useNavigate } from 'react-router-dom';
 
 function DepartmentChoralSinging(){
+    const navigate = useNavigate();
     return(
         <div>
             <Header/>
             <Nav/>
-            <div class="department-name">
+            <div className="department-name">
                 <h4>Отделение хорового пения</h4>
             </div>
             <ImageScroll/>
-            <div class="chapter-name">
+            <div className="chapter-name">
                 <a>Для поступающих</a>
             </div>
             
-            <hr class="hr-line-chapter"/>
+            <hr className="hr-line-chapter"/>
             
-            <div class="info-incoming">
+            <div className="info-incoming">
                     <a><h4>Срок обучения: </h4>8 лет</a>
                     <a><h4>Прием в школу: </h4>7-8 лет</a>
                     <a><h4>Уровень образования: </h4>Дополнительное предпрофессиональное образование</a>
                     <a><h4>Документ об образовании: </h4>Свидетельство об окончании Детской школы искусств государствоенного образца</a>
             </div>
             
-            <div class="chapter-name">
+            <div className="chapter-name">
                 <a>Документы</a>
             </div>
             
-            <hr class="hr-line-chapter"/>
+            <hr className="hr-line-chapter"/>
             
-            <div class="docs">
-                <div class="card-container-docs">
-                    <div id="choral_singing_annotation" class="card-doc" onclick="window.location.href='programs/choral_singing/choral_singing_annotation.pdf'">
+            <div className="docs">
+                <div className="card-container-docs">
+                    <div id="choral_singing_annotation" className="card-doc" onClick="window.location.href='programs/choral_singing/choral_singing_annotation.pdf'">
                         <img src={iconAnnotation}/>
                         <a>Аннотация "Хорового пения"</a>
                     </div>
-                    <div id="choral_singing_DPP" class="card-doc" onclick="window.location.href='programs/choral_singing/choral_singing_DPP.pdf'">
+                    <div id="choral_singing_DPP" className="card-doc" onClick="window.location.href='programs/choral_singing/choral_singing_DPP.pdf'">
                         <img src={iconProgramm}/>
                         <a>ДПП "Хорового пения"</a>
                     </div>
                 </div>
             </div>
             
-            <div class="chapter-name">
+            <div className="chapter-name">
                 <a>Об отделе</a>
             </div>
             
-            <hr class="hr-line-chapter"/>
+            <hr className="hr-line-chapter"/>
             
-            <div class="department-info">
+            <div className="department-info">
                 <p>Фортепианное отделение - одно из самых крупных отделений, существует с момента открытия школы.
                     Предмет фортепиано является важным компонентом музыкального обучения в детской музыкальной школе. В первую очередь, это возможность для учащихся лично, в собственной исполнительской практике познакомиться с огромными фактурными возможностями фортепиано. Нельзя также не признать исключительной роли фортепиано в развитии гармонического и полифонического слуха с первых шагов обучения.
                     В копилке преподавателей отделения огромный опыт в воспитании юных музыкантов-пианистов. Многие выпускники фортепианного отделения связали свою жизнь с музыкой, продолжив образование в музыкальных училищах, на музыкальных факультетах институтов.
@@ -62,7 +64,7 @@ function DepartmentChoralSinging(){
                     Во время учебы юные пианисты осваивают игру на фортепиано соло и в ансамбле, учатся аккомпанировать певцу.
                     Каждый обучающийся отделения получает возможность публичных выступлений на школьных, городских концертах, защищают честь школы искусств «Глазовчанка» на фестивалях и конкурсах городского, областного, межрегионального, Всероссийского и Международного уровней, демонстрируя неизменно высокое качество исполнения и завоевывая новые награды.
                     </p>
-                <div class="head-techers-list">
+                <div className="head-techers-list">
                     <br/><h3>Заведующий отделением:</h3>
                     <br/>Насыбуллина Эльмира Робертовна
                     <br/><h3>Преподаватели отделения:</h3>
