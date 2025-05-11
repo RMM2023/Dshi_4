@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Nav from '../../components/Nav';
+import PosterMusicTichers from '../assets/posters/'
 
 function Poster(){
     <div>
@@ -21,6 +22,15 @@ function Poster(){
                 <div className="month">Июнь</div>
                 <div className="month">Июль</div>
                 <div className="month">Август</div>
+        </div>
+
+        <div className='poster-comtainer'>
+            <img src={PosterMusicTichers}/>
+            <h5>Музыкальное приношение учителям</h5>
+            <p>Дата: 26.09.2024
+                <br/>ул. Тредиаковского, 2/4
+                <br/>Вход свободный
+            </p>
         </div>
     </div>
 }

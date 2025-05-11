@@ -732,3 +732,8 @@ input[type="text"], input[type="password"]{
     font-weight: medium;
     padding: 5px;
 }
+
+.poster-comtainer{
+    display: flex;
+    flex-direction: column;
+}

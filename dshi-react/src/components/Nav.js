@@ -21,7 +21,7 @@ function Nav(){
                 </div>
             </div>
             
-            <div id="index" className="nav-item-main" onClick="window.location.href = 'index.html'">Наша Афиша</div>
+            <div id="index" className="nav-item-main" onClick={() => navigate('/administration/poster')}>Наша Афиша</div>
             
             <div className="nav-item">
                 Сведения об организации
