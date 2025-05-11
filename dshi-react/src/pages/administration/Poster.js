@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Nav from '../../components/Nav';
-import PosterMusicTichers from '../assets/posters/'
+import PosterMusicTichers from '/posters/musicTichers.jpg'
 
 function Poster(){
     <div>
