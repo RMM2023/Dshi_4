@@ -1,18 +1,12 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Nav from '../../components/Nav';
-import add from '../../assets/icons/add.svg';
-import deletes from '../../assets/icons/delete.svg';
-import editing from '../../assets/icons/editing.svg';
 
 function PhotoGalleryEdit(){
     return(
         <div>
             <Header/>
             <Nav/>
-            <div className="icon-add">
-                <img src={add}/>
-            </div>
         
             <h3 className="directions">Фотогаллерея</h3>
         
@@ -21,48 +15,36 @@ function PhotoGalleryEdit(){
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
                 <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
                 <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
                 <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
                 <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
                 <div className="card-choice-edit-photo">
                     <img src="Foto\2.jpg"/>
                     <div className="edit-photo">
                         <a>Наименование фото</a>
-                        <img src={deletes}/>
-                        <img src={editing}/>
                     </div>
                 </div>
             </div>

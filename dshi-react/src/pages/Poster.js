@@ -1,9 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Nav from '../../components/Nav';
-import add from '../../assets/icons/add.svg';
-import deletes from '../../assets/icons/delete.svg';
-import editing from '../../assets/icons/editing.svg';
 
 
 function Poster(){
@@ -28,10 +25,6 @@ function Poster(){
                     <div className="month">Август</div>
             </div>
 
-            <div className="icon-add">
-                <img src={add}/>
-            </div>
-
             <div className='poster-comtainer'>
                 <img src="/posters/musicTichers.jpg"/>
                 <h5>Музыкальное приношение учителям</h5>
@@ -40,11 +33,6 @@ function Poster(){
                     <br/>ул. Тредиаковского, 2/4
                     <br/>Вход свободный
                 </p>
-                <div className="edit-photo">
-                    <a>Наименование фото</a>
-                    <img src={deletes}/>
-                    <img src={editing}/>
-                </div>
             </div>
         </div>
     );
