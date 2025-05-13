@@ -12,6 +12,7 @@ function DepartmentPiano(){
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <div className="department-name">
                 <h4>Отделение фортепиано</h4>
             </div>

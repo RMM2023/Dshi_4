@@ -11,6 +11,7 @@ function Poster(){
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <h3 className="directions">Афиша</h3>
             
             <div className="month-contaner">

@@ -11,6 +11,7 @@ function AdminEditing(){
         <div>
             <Nav/>
             <Header/>
+            <hr className="hr-line"></hr>
             <h3 className="directions">Редактирование</h3>
             
             <div className="card-choice-editing">

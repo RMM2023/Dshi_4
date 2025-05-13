@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Nav from '../../components/Nav';
+import Header from '../components/Header';
+import Nav from '../components/Nav';
 
 function PhotoGalleryEdit(){
     return(
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
         
             <h3 className="directions">Фотогаллерея</h3>
         

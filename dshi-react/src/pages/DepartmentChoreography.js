@@ -12,6 +12,7 @@ function DepartmentChoreography(){
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <div className="department-name">
                 <h4>Отделение хореографического искусства</h4>
             </div>

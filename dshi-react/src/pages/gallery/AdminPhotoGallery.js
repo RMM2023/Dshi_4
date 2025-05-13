@@ -5,11 +5,12 @@ import add from '../../assets/icons/add.svg';
 import deletes from '../../assets/icons/delete.svg';
 import editing from '../../assets/icons/editing.svg';
 
-function PhotoGalleryEdit(){
+function AdminPhotoGallery(){
     return(
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <div className="icon-add">
                 <img src={add}/>
             </div>
@@ -69,4 +70,4 @@ function PhotoGalleryEdit(){
         </div>
     );
 }
-export default PhotoGalleryEdit;
+export default AdminPhotoGallery;

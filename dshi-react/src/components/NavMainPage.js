@@ -5,7 +5,6 @@ function Nav(){
     const navigate = useNavigate();
     return (
         <nav className="nav">
-            <div id="index" class="nav-item-main" onClick={() => navigate('/')}>На главную</div>
             <div className="nav-item">
                 О школе
                 <div className="dropdown-menu">

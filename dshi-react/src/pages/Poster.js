@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Nav from '../../components/Nav';
+import Header from '../components/Header';
+import Nav from '../components/Nav';
 
 
 function Poster(){
@@ -8,6 +8,7 @@ function Poster(){
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <h3 className="directions">Афиша</h3>
             
             <div className="month-contaner">

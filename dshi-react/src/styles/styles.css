@@ -1,4 +1,4 @@
-/*index.html*/
+/*index*/
 
 */*применение параметров ко всему проекту*/{
     font-family: "Roboto", sans-serif; /*стиль шрифта*/
@@ -240,7 +240,7 @@
     100%{transform: translateY(0px);}
 }
 
-/*school-departments.html*/
+/*school-departments.*/
 
 .directions{
     display: flex;
@@ -280,13 +280,13 @@
     align-items: center;
     text-align: center;
     cursor: pointer;
-    padding: 1px;
-    border-radius: 16px;
+    padding: 0.1%;
+    border-radius: 6%;
     background-color: #75A4F3;
     color: white;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 3px; /*межстрочный отступ*/
+    font-size: 100%;
+    font-weight: medium;
+    line-height: 120%; /*межстрочный отступ*/
     box-sizing: auto; /*дает понять auto ширине и высоте, в пределах каких значений выставлять*/
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
@@ -305,7 +305,7 @@
     animation: cursore-nav-back 1s forwards;
 } 
 
-/*department-piano.html*/
+/*department-piano*/
 
 .hr-line-chapter{
     width: 250px;
@@ -415,7 +415,7 @@
     line-height: normal;
 }
 
-/*administration.html*/
+/*administration*/
 form{
     display:flex;
     flex-direction: column;
@@ -483,7 +483,7 @@ input[type="text"], input[type="password"]{
     background-color: #e0e0e0;
 }
 
-/*admin-choice.html*/
+/*admin-choice*/
 
 .card-choice-container{
     display: flex;
@@ -529,7 +529,7 @@ input[type="text"], input[type="password"]{
     margin-top: 16px;
 }
 
-/*admin-editing.html*/
+/*admin-editing*/
 .card-choice-editing{
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -572,7 +572,7 @@ input[type="text"], input[type="password"]{
     animation: cursore-nav-back 1s forwards;
 }
 
-/*photo-gallery.html*/
+/*photo-gallery*/
 
 .card-choice-editing-photo{
     display: grid;
@@ -632,7 +632,7 @@ input[type="text"], input[type="password"]{
     animation: cursore-nav-back 1s forwards;
 }
 
-/*video-gallery.html*/
+/*video-gallery*/
 
 .icon-add{
     display: flex;
@@ -706,7 +706,7 @@ input[type="text"], input[type="password"]{
     animation: cursore-nav-back 1s forwards;
 }
 
-/*poster.html*/
+/*poster*/
 
 .month-contaner{
     display: grid;
@@ -754,4 +754,100 @@ input[type="text"], input[type="password"]{
     justify-content: top;
     align-items: center;
     border-radius: 8px;
+}
+
+/*Timetable*/
+
+.card-container3{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.card-container3{
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 40px; /*отступы между ячейками по высоте и ширине*/
+    justify-content: center;/*цнтрирование ячейки*/
+    margin: 100px auto;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.directions2{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    color: rgba(246, 97, 96, 95%);;
+}
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 16px;
+    background-color: rgba(246, 97, 96, 70%);
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%; /*межстрочный отступ*/
+    box-sizing: auto; /*дает понять auto ширине и высоте, в пределах каких значений выставлять*/
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.card3 img{
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+}
+
+.card3:hover{
+    animation: cursore-nav 1s forwards;
+}
+
+.card3:not(:hover){
+    animation: cursore-nav-back 1s forwards;
+}
+
+/*HistorySchool*/
+
+.History{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20%;
+    text-align: justify;
+    text-indent: 30%;
+}
+
+/*News*/
+
+.news-contaner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    background-color: rgb(46%, 64%, 95%, 70%);
+    border-radius: 0.6em;
+}
+
+.news-contaner image{
+    width: 30%;
+    height: 30%;
+    justify-content: start;
+}
+
+.news-text{
+    display: flex;
+    flex-direction: column;
 }

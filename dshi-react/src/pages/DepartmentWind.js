@@ -12,6 +12,7 @@ function DepartmentWind(){
         <div>
             <Header/>
             <Nav/>
+            <hr className="hr-line"></hr>
             <div className="department-name">
                 <h4>Отделение духовых инструментов</h4>
             </div>

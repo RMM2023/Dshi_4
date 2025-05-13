@@ -10,6 +10,7 @@ function AdminChoice(){
     <div>
         <Header/>
         <Nav/>
+        <hr className="hr-line"></hr>
         <div className="card-choice-container">
             <div className="card-choice" onClick={() => navigate('/administration/adminEditing')}>
                     <img src={iconEdit}/>

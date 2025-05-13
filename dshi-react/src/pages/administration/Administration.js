@@ -6,6 +6,7 @@ function Administration(){
     <div>
         <Header/>
         <Nav/>
+        <hr className="hr-line"></hr>
         <h3 className="directions">Администрация</h3>
         
         <div className="form-container">

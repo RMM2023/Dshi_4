@@ -12,13 +12,23 @@ import DepartmentVocal from './pages/DepartmentVocal';
 import DepartmentWind from './pages/DepartmentWind';
 import DepartmentChoreography from './pages/DepartmentChoreography';
 import DepartmentChoralSinging from './pages/DepartmentChoralSinging';
+import PhotoGallery from './pages/PhotoGallery';
+import VideoGallery from './pages/VideoGallery';
+import Poster from './pages/Poster';
+import Timetable from './pages/Timetable';
+import HistorySchool from './pages/HistorySchool';
+import News from './pages/News';
+import OurStependiates from './pages/OurStependiates';
+import OurLaureates from './pages/OurLaureates';
+import Library from './pages/Library';
+import LibraryStringBowed from './pages/LibraryStringBowed';
 
-import PhotoGalleryEdit from './pages/gallery/PhotoGalleryEdit';
-import VideoGalleryEdit from './pages/gallery/VideoGalleryEdit';
+import AdminPhotoGallery from './pages/gallery/AdminPhotoGallery';
+import AdminVideoGallery from './pages/gallery/AdminVideoGallery';
 import AdminChoice from './pages/administration/AdminChoice';
 import AdminEditing from './pages/administration/AdminEditing';
 import Administration from './pages/administration/Administration';
-import Poster from './pages/administration/Poster';
+import AdminPoster from './pages/administration/AdminPoster';
 
 function App() {
   return (
@@ -36,13 +46,23 @@ function App() {
           <Route path='/departments/wind' element={<DepartmentWind/>}/>
           <Route path='/departments/choreography' element={<DepartmentChoreography/>}/>
           <Route path='/departments/choralSinging' element={<DepartmentChoralSinging/>}/>
+          <Route path='/poster' element={<Poster/>}/>
+          <Route path='/photoGallery' element={<PhotoGallery/>}/>
+          <Route path='/videoGallery' element={<VideoGallery/>}/>
+          <Route path='/timetable' element={<Timetable/>}/>
+          <Route path='/hisroryScool' element={<HistorySchool/>}/>
+          <Route path='/news' element={<News/>}/>
+          <Route path='/ourStependiates' element={<OurStependiates/>}/>
+          <Route path='/ourLaureates' element={<OurLaureates/>}/>
+          <Route path='/library' element={<Library/>}/>
+          <Route path='/libraryStringBowed' element={<LibraryStringBowed/>}/>
           
-          <Route path='/gallery/photoGalleryEdit' element={<PhotoGalleryEdit/>}/>
-          <Route path='/gallery/videoGalleryEdit' element={<VideoGalleryEdit/>}/>
+          <Route path='/galleryAdminphotoGallery' element={<AdminPhotoGallery/>}/>
+          <Route path='/gallery/AdminvideoGalleryEdit' element={<AdminVideoGallery/>}/>
           <Route path='/administration/adminChoice' element={<AdminChoice/>}/>
           <Route path='/administration/adminEditing' element={<AdminEditing/>}/>
           <Route path='/administration/administration' element={<Administration/>}/>
-          <Route path='/administration/poster' element={<Poster/>}/>
+          <Route path='/administration/poster' element={<AdminPoster/>}/>
         </Routes>
       </div>
     </Router>
