@@ -47,9 +47,18 @@ const ImageScroll=() => {
     return(
         <div className="image-scroll">
                 <div className="gallery">
-                    <button id="left-button" className="arrow left-arrow"></button>
-                    <img id="gallery-photo" src="/Foto\1.jpg"/>
-                    <button id="right-button" className="arrow right-arrow"></button>
+                    <button 
+                        className="arrow left-arrow"
+                        onClick={scrollLeft}
+                    />
+                    <img 
+                        className={isAnimating ? 'img-list-scroll' : ''} //если isAnimating true - поставить класс img-list-scroll иначе пустой класс ''. проверка ? если true : если false. До ? if, после ? положительный результат, после : отрицательный результат
+                        src={images[currentIndex]}
+                    />
+                    <button 
+                        className="arrow right-arrow"
+                        onClick={scrollRight}
+                    />
                 </div>
             </div>
     );
