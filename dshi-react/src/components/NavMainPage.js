@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Nav(){
+function NavMainPage(){
     const navigate = useNavigate();
     return (
-        <nav className="nav">
+        <nav className="nav-main-page">
             <div className="nav-item">
                 О школе
                 <div className="dropdown-menu">
@@ -64,4 +64,4 @@ function Nav(){
         </nav>
     );
 }
-export default Nav;
+export default NavMainPage;

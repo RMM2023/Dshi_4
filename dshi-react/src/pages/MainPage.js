@@ -14,7 +14,7 @@ function MainPage(){
             <Header/>
             <NavMainPage/>
             <hr className="hr-line"></hr>
-            <ImageScroll/>          
+            <ImageScroll/>
             <div className="card-container">
                 <div id="card-direction" className="card" onClick={() => navigate('/departments/school')}>
                     <img src={iconMasks}/>

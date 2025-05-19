@@ -26,7 +26,7 @@ function Poster(){
                     <div className="month">Август</div>
             </div>
 
-            <div className='poster-comtainer'>
+            <div className='poster-container'>
                 <img src="/posters/musicTichers.jpg"/>
                 <h5>Музыкальное приношение учителям</h5>
                 <p>Дата: 26.09.2024

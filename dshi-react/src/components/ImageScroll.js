@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
 const ImageScroll=() => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isAnimating, setIsAnimating] = useState (false);
+    const [currentIndex, setCurrentIndex] = useState(0);//[currentIndex, setCurrentIndex] - откуда?  useState(0) - начальное состояние
+    const [isAnimating, setIsAnimating] = useState (false);//[isAnimating, setIsAnimating] - сочиненные или встроенные?
     const images = [
         '/Foto/1.jpg',
         '/Foto/2.jpg',
@@ -16,27 +16,27 @@ const ImageScroll=() => {
         '/Foto/10.jpg'
     ];
 
-    const scrollLeft = () => {
-        if(!isAnimating){
-            setIsAnimating(true);
-            setCurrentIndex((prevIndex) => {
-                const newIndex = prevIndex -1;
-                if(newIndex < 0){
-                    return images.length-1;
+    const scrollLeft = () => {//функция перелистывания налево
+        if(!isAnimating){//проверка если не пустой isAnimating
+            setIsAnimating(true); //запускается анимация?
+            setCurrentIndex((prevIndex) => {//изменение начального индекса
+                const newIndex = prevIndex -1;//на один меньше
+                if(newIndex < 0){//если ниже ноля инндекс фото
+                    return images.length-1;//возвращает -1 индекс, переход к начальному
                 }else{
                     return newIndex;
                 }
             });
-            setTimeout(() => {setIsAnimating(false)},800);
+            setTimeout(() => {setIsAnimating(false)},800);//время срабатывания анимации
         };
     }
     const scrollRight = () => {
         if(!isAnimating){
             setIsAnimating(true);
             setCurrentIndex((prevIndex) => {
-                const newIndex = prevIndex +1;
+                const newIndex = prevIndex +1;//увелечине на 1
                 if(newIndex >= images.length){
-                    return 0;
+                    return 0;//дойдя до конца, переходит в 0 индекс
                 }else{
                     return newIndex;
                 }
