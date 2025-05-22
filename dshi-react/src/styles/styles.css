@@ -177,8 +177,8 @@
 }
 
 .arrow {
-    width: 0.5%;
-    height: 0.5%;
+    width: 40px;
+    height: 40px;
     background-repeat: no-repeat;/*фоновый элемент не повторяется*/
     background-position: center;
     background-color: transparent; /* Делаем фон прозрачным */
@@ -191,14 +191,10 @@
 
 .left-arrow {
     background-image: url('../assets/icons/left.svg');/*вставка изображения на фон*/
-    width: 0.3%;
-    height: 0.3%;
 }
 
 .right-arrow {
     background-image: url('../assets/icons/right.svg');
-    width: 0.3%;
-    height: 0.3%;
 }
 
 .card-container{
@@ -265,8 +261,11 @@
 
 .card-container2{
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-template-rows: repeat(2, 20%);
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin: 2% auto 0 auto;
     justify-content: center;
     gap: 2%;
 }
@@ -288,8 +287,8 @@
 }
 
 .card2 img{
-    width: 35%;
-    height: 70%;
+    width: 25%;
+    height: 60%;
 }
 
 .card2:hover{
@@ -630,7 +629,7 @@ input[type="text"], input[type="password"]{
     position: absolute;
     width: 50%;
     height: 50%;
-    margin: 20%;
+    margin: 20%; 
 }
 
 .card-choice-editing-video{
@@ -702,7 +701,7 @@ input[type="text"], input[type="password"]{
     display: grid;
     grid-template-columns: repeat(6, 200px);
     grid-template-rows: repeat(2, 30px);
-    gap: 16px;
+    gap: 2%;
     justify-content: center;
     margin: 10px;
     align-items: center;
@@ -718,17 +717,16 @@ input[type="text"], input[type="password"]{
     align-items: center;
     border: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 140%;
     font-weight: medium;
-    padding: 5px;
+    padding: 2%;
 }
 
 .poster-container{
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    width: 265px;
-    height: auto;
+    max-width: 10%;
+    height: 20%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -739,8 +737,8 @@ input[type="text"], input[type="password"]{
 
 .poster-container img{
     margin: 2%;
-    width: 200px;
-    height: 250px;
+    width: 15%;
+    height: 25%;
     justify-content: top;
     align-items: center;
     border-radius: 8px;
@@ -770,8 +768,8 @@ input[type="text"], input[type="password"]{
 .directions2{
     display: flex;
     justify-content: center;
-    font-size: 64px;
-    font-weight: 500;
+    font-size: 280%;
+    font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0,0,0,0.15);
     color: rgba(246, 97, 96, 95%);;
 }
@@ -883,6 +881,21 @@ input[type="text"], input[type="password"]{
     .nav-item, .nav-item-main {
         font-size: 16px;
         margin: 0 12px;
+    }
+        .hr-line{
+        width: 90%;
+    }
+        .directions{
+        font-size: 240%;
+    }
+    .month-contaner{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(4, 30px);
+        gap: 16px;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
     }
 }
 
